@@ -1,0 +1,9 @@
+.main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.color-card {
+    max-width: 500px;
+}

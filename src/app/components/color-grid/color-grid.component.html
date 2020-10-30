@@ -1,0 +1,13 @@
+<div class="content" *ngIf="_cps.colors.length > 0" fxLayout="row wrap" style="align-items: center;">
+    <mat-card fxFlex.xs="100%" fxFlex.sm="32%" *ngFor="let color of _cps.colors" [style.background-color]="color.hex.value">
+        <!-- (click)="colorClick(color.hex.clean) -->
+        <div class="container white-rounded-bg p-3 animate__animated animate__fadeIn animate__faster">
+            <mat-card-title >
+                {{ color.hex.value }} <img [src]="color.image.bare" style="border-radius: 90px; height: 12px;">
+            </mat-card-title>
+            <mat-card-content >
+                {{  (color.name.value.length>15)? (color.name.value | slice:0:15)+'..':(color.name.value) }}
+            </mat-card-content>
+        </div>
+    </mat-card>
+</div>

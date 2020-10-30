@@ -1,0 +1,14 @@
+.content {
+    padding: 16px;
+}
+
+.content > mat-card {
+    margin: 2px;
+    width: 140px;
+}
+
+.white-rounded-bg {
+    background-color: white; 
+    border-radius: 5px; 
+    text-align: center;
+}
